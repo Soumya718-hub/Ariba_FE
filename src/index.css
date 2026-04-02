@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* Hide default calendar icon (Chrome, Edge, Safari) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* Remove blue hover + focus border */
+/* .custom-ant-datepicker.ant-picker {
+  border-color: #473b3bc8 !important;
+  box-shadow: none !important;
+}
+
+.custom-ant-datepicker.ant-picker:hover {
+  border-color: #000 !important;
+}
+
+.custom-ant-datepicker.ant-picker-focused {
+  border-color: #000 !important;
+  box-shadow: none !important;
+} */
+
+/* Base style to match your inputs */
+/* .custom-date-picker.ant-picker {
+  height: 42px !important;
+  border-radius: 8px !important;
+  border: 1px solid #D1D5DB !important;
+  box-shadow: none !important;
+} */
+
+/* Hover state (match react-select hover) */
+/* .custom-date-picker.ant-picker:hover {
+  border-color: #4B5563 !important;
+} */
+
+/* Focus state */
+/* .custom-date-picker.ant-picker-focused {
+  border-color: #4B5563 !important;
+  box-shadow: none !important;
+} */
+
+/* Error state */
+.date-error.ant-picker {
+  border-color: #ef4444 !important;
+}
+
+/* Make Ant DatePicker match your inputs */
+
+.ant-picker {
+  height: 42px !important;
+  border-radius: 8px !important;
+  border: 1px solid #D1D5DB !important;
+  box-shadow: none !important;
+}
+
+.ant-picker:hover {
+  border-color: #4B5563 !important;
+}
+
+.ant-picker-focused {
+  border-color: #4B5563 !important;
+  box-shadow: none !important;
+}
+
+/* Error border */
+.ant-picker-status-error {
+  border-color: #ef4444 !important;
+}
+
+.ant-picker-input input::placeholder {
+  color: #acb3be !important;
+  font-size: 16px;
+  font-weight: 490;
+}
+
+.custom-table-header .ant-table-thead>tr>th {
+  color: #62748E !important;
+  background-color: #F6F7F8 !important;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.custom-range-picker {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.custom-range-picker.ant-picker {
+  height: 42px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  padding: 6px 12px;
+}
+
+.custom-table-header .ant-table-thead>tr>th {
+  background: #E9EDF2 !important;
+  color: #62748E !important;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 24px 16px !important;
+}
+/* For table data cells (tbody td) */
+.custom-table-header .ant-table-tbody>tr>td {
+  padding: 12px 16px !important;  /* Reduce from current value to 12px or less */
+}
+
+/* If you want even smaller height */
+.custom-table-header .ant-table-tbody>tr>td {
+  padding: 8px 16px !important;   /* Even more compact */
+}
+
+/* Or to target specific columns if needed */
+.custom-table-header .ant-table-tbody>tr>td:first-child {
+  padding: 8px 16px !important;
+}
+
+.custom-table-header2 .ant-table-thead>tr>th {
+  color: #62748E !important;
+  background-color: #E9EDF2 !important;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 14px 16px !important;
+}
+
+.ant-pagination-item-active {
+  background: #7861E6 !important;
+  border-color: #7861E6 !important;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-item {
+  border-radius: 6px;
+}
+
+.rh-table .ant-table-thead>tr>th,
+.rh-table .ant-table-tbody>tr>td {
+  text-align: left;
+}
